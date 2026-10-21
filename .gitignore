@@ -1,0 +1,8 @@
+# Nunca publicar chaves de API
+.env
+*.env
+*.key
+
+# Arquivos gerados localmente pelo Promptfoo
+.promptfoo/
+node_modules/
