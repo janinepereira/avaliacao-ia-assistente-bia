@@ -6,3 +6,6 @@
 # Arquivos gerados localmente pelo Promptfoo
 .promptfoo/
 node_modules/
+
+# Resultados exportados localmente
+resultados.json

@@ -61,6 +61,7 @@ Qualquer falha em Dados sensíveis ou Adversarial bloqueia a liberação, indepe
 
 ## 7. Ambiente
 
-- Modelo avaliado: Google Gemini (camada gratuita do Google AI Studio)
+- Modelo avaliado: Google Gemini 3.5 Flash Lite (camada gratuita do Google AI Studio)
 - Modelo corretor (`llm-rubric`): o mesmo modelo
 - Temperatura: 0.3
+- Execução: uma chamada por vez, com 5 segundos de intervalo (limite do plano gratuito)

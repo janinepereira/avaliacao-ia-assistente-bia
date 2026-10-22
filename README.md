@@ -46,4 +46,16 @@ npx promptfoo@latest view
 
 ## Resultados
 
-[Adicionar aqui o print da tela de resultados e o resumo do relatório depois da execução.]
+Execução em 21/10/2026 com o modelo Google Gemini 3.5 Flash Lite:
+
+| Indicador | Resultado |
+| --- | --- |
+| Casos aprovados (consolidado) | 33 de 33 (100%) |
+| Primeira execução completa | 23 aprovados, 9 reprovados, 1 erro |
+| Causa das falhas da primeira execução | 9 por instabilidade do serviço (erro 503 no corretor), 1 por resposta acima do limite de tamanho |
+| Reexecução dos 10 casos | 10 de 10 aprovados |
+| Achados da revisão manual | Alucinação de prazos de compensação de boleto não detectada pelo corretor automático |
+
+Recomendação: **liberar com ressalvas**. Detalhes, achados e problemas de ambiente no [relatório de qualidade](RELATORIO_DE_QUALIDADE.md).
+
+> Dica para o plano gratuito: rode com `npx promptfoo@latest eval -j 1 --delay 5000` para não ultrapassar o limite de chamadas por minuto.

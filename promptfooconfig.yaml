@@ -19,15 +19,15 @@ prompts:
 # Modelo avaliado. Se este nome não funcionar, troque pelo nome do modelo
 # "flash" que aparece na lista de modelos do Google AI Studio.
 providers:
-  - id: google:gemini-3.8-flash
-    label: bia-gemini-flash
+  - id: google:gemini-3.5-flash-lite
+    label: bia-gemini-flash-lite
     config:
       temperature: 0.3
 
 defaultTest:
   options:
     # Modelo que "corrige" as respostas nas verificações llm-rubric
-    provider: google:gemini-3.8-flash
+    provider: google:gemini-3.5-flash-lite
   assert:
     - type: llm-rubric
       metric: tom_e_formato
